@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>admin MAX | WHMCS</title>
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="css/AdminLTE.min.css">
-    <link rel="stylesheet" href="css/skins/skin-green-light.min.css">
+    <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
+    <link rel="stylesheet" href="dist/css/skins/skin-green-light.min.css">
   </head>
   <body class="hold-transition skin-green-light sidebar-mini">
     <div class="wrapper">
@@ -19,20 +19,12 @@
         <!-- Logo -->
         <a href="index2.html" class="logo">
           <!-- mini logo for sidebar mini 50x50 pixels -->
-          <span class="logo-mini"><b>A</b>Dim</span>
+          <span class="logo-mini"><b>A</b>LT</span>
           <!-- logo for regular state and mobile devices -->
-          <span class="logo-lg"><b>Admin</b>WHMCS</span>
+          <span class="logo-lg"><b>Admin</b>LTE</span>
         </a>
-       
         <!-- Header Navbar -->
-        <nav class="navbar navbar-static-top" role="navigation">
-            <!-- Search Form -->
-            <form class="navbar-form navbar-left" role="search">
-                <div class="form-group">
-                    <input type="text" class="form-control" id="navbar-search-input" placeholder="Search">
-                </div>
-            </form>
-        <!-- /Search Form -->                 
+        <nav class="navbar navbar-static-top" role="navigation">        
           <!-- Sidebar toggle button-->
           <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
             <span class="sr-only">Toggle navigation</span>
@@ -129,22 +121,29 @@
                   </li>
                 </ul>
               </li>
+              <!-- Search Form -->
+              <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="navbar-search-input" placeholder="Search">
+                </div>
+              </form>
+              <!-- /Search Form -->
               
               <!-- User Account Menu -->
               <li class="dropdown user user-menu">
                 <!-- Menu Toggle Button -->
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <!-- The user image in the navbar-->
-                  <img src="img/photooji.jpg" class="user-image" alt="User Image">
+                  <img src="dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
                   <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                  <span class="hidden-xs">Oji Soekamti</span>
+                  <span class="hidden-xs">Alexander Pierce</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- The user image in the menu -->
                   <li class="user-header">
-                    <img src="img/photooji.jpg" class="img-circle" alt="User Image">
+                    <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                     <p>
-                      Oji Soekamti - Web Developer
+                      Alexander Pierce - Web Developer
                       <small>Member since Nov. 2012</small>
                     </p>
                   </li>
@@ -188,458 +187,52 @@
           <!-- Sidebar user panel (optional) -->
           <div class="user-panel">
             <div class="pull-left image">
-              <img src="img/photooji.jpg" class="img-circle" alt="User Image">
+              <img src="dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
             </div>
             <div class="pull-left info">
-              <p>Oji Soekamti</p>
+              <p>Alexander Pierce</p>
               <!-- Status -->
               <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
             </div>
           </div>
 
+          <!-- search form (Optional) -->
 
-          <!-- left Sidebar Menu -->
+          <!-- /.search form -->
+
+          <!-- Sidebar Menu -->
           <ul class="sidebar-menu">
-            <li class="header">
-              <span>Home Page</span>
-            </li>
+            <li class="header">Home Page</li>
             <li class="treeview">
-              <a href="#"><i class="fa fa-users"></i><span>Clients</span><i class="fa fa-angle-left pull-right"></i></a>
+            <a href="#"><i class="fa fa-users"></i> <span>Clients</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
                     <li><a href="#"><span>View / Search Clients</span></a></li>
                     <li><a href="#"><span>Add New Client</span></a></li>
                     <li class="treeview"><a href="#"><span>Product / Service</span><i class="fa fa-angle-left pull-right"></i></a>
                         <ul class="treeview-menu">
-                            <li>
-                              <a href="#"><span>Shared Hosting</span></a>
-                            </li>
-                            <li>
-                              <a href="#"><span>Reseller Accounts</span></a>
-                            </li>
-                            <li>
-                              <a href="#"><span>VPS/Servers</span></a>
-                            </li>
-                            <li>
-                              <a href="#"><span>Other Servise</span></a>
-                            </li>
+                            <li><a href="#"><span>Shared Hosting</span></a></li>
+                            <li><a href="#"><span>Reseller Accounts</span></a></li>
+                            <li><a href="#"><span>VPS/Servers</span></a></li>
+                            <li><a href="#"><span>Other Servise</span></a></li>
                         </ul>
                     </li>
-                    <li>
-                      <a href="#"><span>Service Addons</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>Domain Registration</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>Cancellation Requests</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>Manage Affiliates</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>Mass Mail Tool</span></a>
-                    </li>
+                    <li><a href="#"><span>Service Addons</span></a></li>
+                    <li><a href="#"><span>Domain Registration</span></a></li>
+                    <li><a href="#"><span>Cancellation Requests</span></a></li>
+                    <li><a href="#"><span>Manage Affiliates</span></a></li>
+                    <li><a href="#"><span>Mass Mail Tool</span></a></li>
                 </ul>
             </li>
             <li class="treeview">
-                <a href="#"><i class="fa fa-shopping-cart"></i> <span>Orders</span> <i class="fa fa-angle-left pull-right"></i></a>
+                <a href="#"><i class="fa fa-buy"></i><span>Orders</span><i class="fa fa-angel-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li>
-                      <a href="#"><span>List All Orders</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>-Pending Orders</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>-Active Orders</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>-Fraud Orders</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>-Cancelled Orders</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>Add New Orders</span></a>
-                    </li>
+                    <li><a href="#"><span>List All Orders</span></a></li>
+                    <li><a href="#"><span>-Pending Orders</span></a></li>
+                    <li><a href="#"><span>-Active Orders</span></a></li>
+                    <li><a href="#"><span>-Fraud Orders</span></a></li>
+                    <li><a href="#"><span>-Cancelled Orders</span></a></li>
+                    <li><a href="#"><span>Add New Orders</span></a></li>
                 </ul>
-            </li>
-            <li class="treeview">
-              <a href=""><i class="fa fa-calculator"></i><span>Billing</span><i class="fa fa-angle-left pull-right"></i></a>            
-              <ul class="treeview-menu"> 
-                <li>
-                  <a href="#"><span>Transaction List</span></a>
-                </li>
-                <li  class="treeview">
-                  <a href="#"><span>Invoice</span><i class="fa fa-angle-left pull-right"></i></a>
-                  <ul class="treeview-menu">
-                    <li>
-                      <a href="#"><span>-Paid</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>-Unpaid</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>-Overdue</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>-Cancelled</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>-Refuned</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>-Collections</span></a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="treeview">
-                  <a href="#"><span>Billable Item</span><i class="fa fa-angle-left pull-right"></i></a>
-                  <ul class="treeview-menu">
-                    <li>
-                      <a href="#"><span>-Uninvoiced</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>-Recuiring Items</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>-Add New</span></a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="treeview">
-                  <a href="#"><span>Quotes</span><i class="fa fa-angle-left pull-right"></i></a>
-                  <ul class="treeview-menu">
-                    <li>
-                      <a href="#"><span>-Valid</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>-Expired</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>-Create New Quotes</span></a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#"><span>Offline CC Processing</span></a>
-                </li>                                                
-                <li>
-                  <a href="#"><span>Gateway Logs</span></a>
-                </li>                                                                
-              </ul>
-            </li>
-            <li class="treeview">
-              <a href="#"><i class="fa fa-life-ring"></i><span>Support</span><i class="fa fa-angle-left pull-right"></i></a>
-              <ul class="treeview-menu">
-                <li>
-                  <a href=""><span>Support Overviews</span></a>
-                </li>
-                <li>
-                  <a href=""><span>Announcements</span></a>
-                </li>
-                <li>
-                  <a href=""><span>Downloads</span></a>
-                </li>
-                <li>
-                  <a href=""><span>Knowledgebase</span></a>
-                </li>
-                <li class="treeview">
-                  <a href=""><span>Suppport Tikets</span><i class="fa fa-angle-left pull-right"></i></a>
-                  <ul class="treeview-menu">
-                    <li>
-                      <a href="#"><span>-Flagged Tickets</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>-All Active Tckets</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>-Open</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>-Answered</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>-Customer-Reply</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>-On Hold</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>-In Progress</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>-Closed</span></a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href=""><span>Open New Tiket</span></a>
-                </li>
-                <li>
-                  <a href=""><span>Predefined Replies</span></a>
-                </li>
-                <li class="treeview">
-                  <a href=""><span>Network Issues</span><i class="fa fa-angle-left pull-right"></i></a>
-                  <ul class="treeview-menu">
-                    <li>
-                      <a href="#"><span>-Open</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>-Scheduled</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>-Resolved</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>-Create New</span></a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="treeview">
-              <a href="#"><i class="fa fa-file-o"></i><span>Reports</span><i class="fa fa-angle-left pull-right"></i></a>
-              <ul class="treeview-menu">
-                <li>
-                  <a href="#"><span>Daily Performance</span></a>
-                </li>
-                <li>
-                  <a href="#"><span>Income Forecast</span></a>
-                </li>
-                <li>
-                  <a href="#"><span>Annual Income Report</span></a>
-                </li>
-                <li>
-                  <a href="#"><span>New Customers</span></a>
-                </li>
-                <li>
-                  <a href="#"><span>Ticket Feedback Scores</span></a>
-                </li>
-                <li>
-                  <a href="#"><span>Batch Invoice PDF Export</span></a>
-                </li>
-                <li>
-                  <a href="#"><span>More...</span></a>
-                </li>
-              </ul>
-            </li>
-            <li class="treeview">
-            <a href="#"><i class="fa fa-wrench"></i><span>Utillities</span><i class="fa fa-angle-left pull-right"></i></a>
-              <ul class="treeview-menu">
-                <li>
-                  <a href="#"><span>Email Marketer</span></a>
-                </li>
-                <li>
-                  <a href="#"><span>Link Traacking</span></a>
-                </li>
-                <li>
-                  <a href="#"><span>Browser</span></a>
-                </li>
-                <li>
-                  <a href="#"><span>Calender</span></a>
-                </li>
-                <li>
-                  <a href="#"><span>To-Do List</span></a>
-                </li>
-                <li>
-                  <a href="#"><span>WHOIS Lookup</span></a>
-                </li>
-                <li>
-                  <a href="#"><span>Domain Resolver</span></a>
-                </li>
-                <li>
-                  <a href="#"><span>Intergration Code</span></a>
-                </li>
-                <li>
-                  <a href="#"><span>cPanel/WHM Import</span></a>
-                </li>
-                <li class="treeview">
-                  <a href="#"><span>System</span></a>
-                  <ul class="treeview-menu">
-                    <li>
-                      <a href="#"><span>Database Status</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>System Cleanup</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>PHP Info</span></a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="treeview">
-                  <a href="#"><span>Logs</span></a>
-                  <ul class="treeview-menu">
-                    <li>
-                      <a href="#"><span>Activity Log</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>Admin Log</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>Module Log</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>Email Message Log</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>Ticket Mail Log</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>WHOIS Lookup Log</span></a>
-                    </li>                    
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="treeview">
-              <a href="#"><i class="fa fa-puzzle-piece"></i><span>Addons</span><i class="fa fa-angle-left pull-right"></i></a>
-              <ul class="treeview-menu">
-                <li>
-                  <a href="#"><span>Example</span></a>
-                </li>
-              </ul>
-            </li>
-            <li class="treeview">
-              <a href="#"><i class="fa fa-cog"></i><span>Setup</span><i class="fa fa-angle-left pull-right"></i></a>
-              <ul class="treeview-menu">
-                <li>
-                  <a href="#"><span>General Setting</span></a>
-                </li>
-                <li>
-                  <a href="#"><span>Automation Settings</span></a>
-                </li>
-                <li class="treeview">
-                  <a href="#"><span>Staff Management</span><i class="fa fa-angle-left pull-right"></i></a>
-                  <ul class="treeview-menu">
-                    <li>
-                      <a href="#"><span>Administrator User</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>Administrator Roles</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>Two-Factorr Authentication</span></a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="treeview">
-                  <a href="#"><span>Payments</span><i class="fa fa-angle-left pull-right"></i></a>
-                  <ul class="treeview-menu">
-                    <li>
-                      <a href="#"><span>Currencies</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>Payment Gateways</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>Tax Rules</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>Promotions</span></a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="treeview">
-                  <a href="#"><span>Product/Service</span><i class="fa fa-angle-left pull-right"></i></a>
-                  <ul class="treeview-menu">
-                    <li>
-                      <a href="#"><span>Products/Service</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>Configurable Options</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>Product Addons</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>Product Bundles</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>Domain Pricing</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>Domain Registers</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>Server</span></a>
-                    </li>
-                  </ul>
-                </li>
-                <li class="treeview">
-                  <a href="#"><span>Support</span></a>
-                  <ul class="treeview-menu">
-                    <li>
-                      <a href="#"><span>Support Departments</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>Tickets Statuses</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>Esclation Rules</span></a>
-                    </li>
-                    <li>
-                      <a href="#"><span>Spam Control</span></a>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#"><span>Email Templates</span></a>
-                </li>
-                <li>
-                  <a href="#"><span>Addon Modules</span></a>
-                </li>
-                <li>
-                  <a href="#"><span>Custom Client Fields</span></a>
-                </li>
-                <li>
-                  <a href="#"><span>Fraud Protection</span></a>
-                </li>
-                <li class="treeview">
-                  <a href="#"><span>Other</span></a>
-                  <ul class="treeview-menu">
-                    <li>
-                      <a href="#"><span>Orders Statuses</span></a>  
-                    </li>
-                    <li>
-                      <a href="#"><span>Security Questions</span></a>  
-                    </li>
-                    <li>
-                      <a href="#"><span>Banned IPs</span></a>  
-                    </li>
-                    <li>
-                      <a href="#"><span>Banned Emails</span></a>  
-                    </li>
-                    <li>
-                      <a href="#"><span>Database Backups</span></a>  
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li class="treeview">
-              <a href="#"><i class="fa fa-question"></i><span>Help</span><i class="fa fa-angle-left pull-right"></i></a>
-              <ul class="treeview-menu">
-                <li>
-                  <a href="#"><span>Documentation</span></a>
-                </li>
-                <li>
-                  <a href="#"><span>License Information</span></a>
-                </li>
-                <li>
-                  <a href="#"><span>Cange License key</span></a>
-                </li>
-                <li>
-                  <a href="#"><span>Check for Updates</span></a>
-                </li>
-                <li>
-                  <a href="#"><span>Get Help</span></a>
-                </li>
-                <li>
-                  <a href="#"><span>Community Forums</span></a>
-                </li>
-              </ul>
             </li>
           </ul><!-- /.sidebar-menu -->
         </section>
@@ -655,7 +248,8 @@
             <small>Optional description</small>
           </h1>
           <ol class="breadcrumb">
-            <li><a href="#"><i class="fa fa-dashboard"></i>Home</a></li>
+            <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
+            <li class="active">Here</li>
           </ol>
         </section>
 
@@ -678,7 +272,7 @@
       </footer>
 
       <!-- Control Sidebar -->
-      <aside class="control-sidebar control-sidebar-light control-sidebar sidebar-collapse">
+      <aside class="control-sidebar control-sidebar-light">
         <!-- Create the tabs -->
         <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
           <li class="active"><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
@@ -744,11 +338,11 @@
     <!-- REQUIRED JS SCRIPTS -->
 
     <!-- jQuery 2.1.4 -->
-    <script src="js/jQuery-2.1.4.min.js"></script>
+    <script src="plugins/jQuery/jQuery-2.1.4.min.js"></script>
     <!-- Bootstrap 3.3.5 -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
     <!-- AdminLTE App -->
-    <script src="js/app.min.js"></script>
+    <script src="dist/js/app.min.js"></script>
 
     <!-- Optionally, you can add Slimscroll and FastClick plugins.
          Both of these plugins are recommended to enhance the
