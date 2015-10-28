@@ -657,7 +657,7 @@
         </section><!-- /.content -->
         <section class="content">
           <!-- row -->
-          <div class="row">
+          <div class="row" style="margin:0px;">
             <!-- accordion search -- >
             <!-- Accordion -->
             <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
@@ -768,26 +768,30 @@
           <!-- /row -->
           <!--row -->
           <div class="row">
-            <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th><input type="checkbox"/></th>
-                  <th>ID</th>
-                  <th>First Name</th>
-                  <th>Last Name</th>
-                  <th>Company Name</th>
-                  <th>Email Address</th>
-                  <th>Service</th>
-                  <th>Created</th>
-                  <th>Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td colspan="9">No result found</td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="col-sm-12">
+              <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th><input type="checkbox"/></th>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Company Name</th>
+                    <th>Email Address</th>
+                    <th>Service</th>
+                    <th>Created</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td colspan="9">No result found</td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+            </div>
           </div>
           <!--row -->
         </section>
@@ -836,7 +840,7 @@
     <!-- ChartJS 1.0.1 -->
     <script src="plugins/chartjs/Chart.min.js"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="js/pages/dashboard2.js"></script>
+    <!-- <script src="js/pages/dashboard2.js"></script> -->
     <!-- AdminLTE for demo purposes -->
     <script src="js/demo.js"></script>
     <!-- fullCalendar -->
