@@ -654,41 +654,144 @@
             View/Search Clients
           </h1>
           </br>
-          <!-- accordion search -- >
-          <!-- Accordion -->
-          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
-            <div class="panel panel-default">
-              <div class="panel-heading" role="tab" id="headingSearch">
-                <h4 class="panel-title">
-                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSearch" aria-expanded="false" aria-controls="collapseSearch">
-                    Search
-                  </a>
-                </h4>
-              </div>
-              <div id="collapseSearch" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSearch">
-                <div class="panel-body">
-                  <form class="form-horizontal" action="" method="POST">
-                    <div class="row">
+        </section><!-- /.content -->
+        <section class="content">
+          <!-- row -->
+          <div class="row">
+            <!-- accordion search -- >
+            <!-- Accordion -->
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingSearch">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSearch" aria-expanded="false" aria-controls="collapseSearch">
+                      Search
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseSearch" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSearch">
+                  <div class="panel-body">
+                    <form class="form-horizontal" action="" method="POST">
                       <div class="col-md-6">
+
                         <div class="form-group">
-                          <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-                          <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                          <label for="client" class="col-sm-5 control-label">Client Name</label>
+                          <div class="col-sm-7">
+                            <input type="email" class="form-control" id="client" placeholder="Client Name">
                           </div>
                         </div>
+                        <div class="form-group">
+                          <label for="email" class="col-sm-5 control-label">Email Address</label>
+                          <div class="col-sm-7">
+                            <input type="email" class="form-control" id="email" placeholder="Email Address">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="status" class="col-sm-5 control-label">Status</label>
+                          <div class="col-sm-7">
+                            <select class="form-control">
+                              <option>Any</option>
+                              <option>Active</option>
+                              <option>Inactive</option>
+                              <option>Closed</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="status" class="col-sm-5 control-label">Client</label>
+                          <div class="col-sm-7">
+                            <select class="form-control">
+                              <option>Any</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="status" class="col-sm-5 control-label">Currency</label>
+                          <div class="col-sm-7">
+                            <select class="form-control">
+                              <option>Any</option>
+                              <option>IDR</option>
+                              <option>USD</option>
+                            </select>
+                          </div>
+                        </div>
+
                       </div>
+
                       <div class="col-md-6">
-                        
+
+                        <div class="form-group">
+                          <label for="company" class="col-sm-5 control-label">Company Name</label>
+                          <div class="col-sm-7">
+                            <input type="company" class="form-control" id="company" placeholder="Company Name">
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="company" class="col-sm-5 control-label">Company Name</label>
+                          <div class="col-sm-7">
+                            <input type="company" class="form-control" id="company" placeholder="Company Name">
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="state" class="col-sm-5 control-label">State / Region</label>
+                          <div class="col-sm-7">
+                            <input type="state" class="form-control" id="state" placeholder="State / Region">
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="phonenumber" class="col-sm-5 control-label">Phone Number</label>
+                          <div class="col-sm-7">
+                            <input type="phonenumber" class="form-control" id="phonenumber" placeholder="Phone Number">
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="cardlast" class="col-sm-5 control-label">Card Last</label>
+                          <div class="col-sm-7">
+                            <input type="cardlast" class="form-control" id="cardlast" placeholder="Card Last">
+                          </div>
+                        </div>
+
                       </div>
-                    </div>
-                  </form>
+                    </form>
+                    <button class="btn btn-success pull-right">Search</button>
+                  </div>
                 </div>
               </div>
+              <!-- /Accordion -->
             </div>
-            <!-- /Accordion -->
+            <!-- /accordion search -- >
           </div>
-          <!-- /accordion search -- >
-        </section><!-- /.content -->
+          <!-- /row -->
+          <!--row -->
+          <div class="row">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th><input type="checkbox"/></th>
+                  <th>ID</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Company Name</th>
+                  <th>Email Address</th>
+                  <th>Service</th>
+                  <th>Created</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td colspan="9">No result found</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!--row -->
+        </section>
+
       </div><!-- /.content-wrapper -->
 
       <!-- Main Footer -->
@@ -740,15 +843,12 @@
     <script src="js/moment.min.js"></script>
     <script src="plugins/fullcalendar/fullcalendar.js"></script>
     <script src="plugins/fullcalendar/fullcalendar.min.js"></script>
-        <script type="text/javascript">
+    <script type="text/javascript">
       $(document).ready(function() {
-
         // page is now ready, initialize the calendar...
-
         $('#calendar').fullCalendar({
-            
-        })
 
+        })
       }); 
     </script>
 
