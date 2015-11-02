@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>admin MAX | WHMCS</title>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="css/AdminLTE.min.css">
+    <link rel="stylesheet" href="css/skins/skin-green-light.min.css">
+    <link rel="stylesheet" href="plugins/fullcalendar/fullcalendar.css">
+    <link rel="stylesheet" href="plugins/fullcalendar/fullcalendar.min.css">
+    <link rel="stylesheet" href="plugins/fullcalendar/fullcalendar.print.css">
+  </head>
+  <body class="hold-transition skin-green-light sidebar-mini">
+    <div class="wrapper">
+
+      <!-- Main Header -->
+      <header class="main-header">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+          <!-- mini logo for sidebar mini 50x50 pixels -->
+          <span class="logo-mini"><b>A</b>Dim</span>
+          <!-- logo for regular state and mobile devices -->
+          <span class="logo-lg"><b>Admin</b>WHMCS</span>
+        </a>
+       
+        <!-- Header Navbar -->
+        <nav class="navbar navbar-static-top" role="navigation">
+            <!-- Search Form -->
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="navbar-search-input" placeholder="Search">
+                </div>
+            </form>
+        <!-- /Search Form -->                 
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="offcanvas" role="button">
+            <span class="sr-only">Toggle navigation</span>
+          </a>
+          <!-- Navbar Right Menu -->
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
+              <!-- Messages: style can be found in dropdown.less-->
+              <li class="dropdown messages-menu">
+                <!-- Menu toggle button -->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="label label-success">4</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="header">You have 4 messages</li>
+                  <li>
+                    <!-- inner menu: contains the messages -->
+                    <ul class="menu">
+                      <li><!-- start message -->
+                        <a href="#">
+                          <div class="pull-left">
+                            <!-- User Image -->
+                            <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                          </div>
+                          <!-- Message title and timestamp -->
+                          <h4>
+                            Support Team
+                            <small><i class="fa fa-clock-o"></i> 5 mins</small>
+                          </h4>
+                          <!-- The message -->
+                          <p>Why not buy a new awesome theme?</p>
+                        </a>
+                      </li><!-- end message -->
+                    </ul><!-- /.menu -->
+                  </li>
+                  <li class="footer"><a href="#">See All Messages</a></li>
+                </ul>
+              </li><!-- /.messages-menu -->
+              <!-- Notifications Menu -->
+              <li class="dropdown notifications-menu">
+                <!-- Menu toggle button -->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-bell-o"></i>
+                  <span class="label label-warning">10</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="header">You have 10 notifications</li>
+                  <li>
+                    <!-- Inner Menu: contains the notifications -->
+                    <ul class="menu">
+                      <li><!-- start notification -->
+                        <a href="#">
+                          <i class="fa fa-users text-aqua"></i> 5 new members joined today
+                        </a>
+                      </li><!-- end notification -->
+                    </ul>
+                  </li>
+                  <li class="footer"><a href="#">View all</a></li>
+                </ul>
+              </li>
+              <!-- Tasks Menu -->
+              <li class="dropdown tasks-menu">
+                <!-- Menu Toggle Button -->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <i class="fa fa-flag-o"></i>
+                  <span class="label label-danger">9</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li class="header">You have 9 tasks</li>
+                  <li>
+                    <!-- Inner menu: contains the tasks -->
+                    <ul class="menu">
+                      <li><!-- Task item -->
+                        <a href="#">
+                          <!-- Task title and progress text -->
+                          <h3>
+                            Design some buttons
+                            <small class="pull-right">20%</small>
+                          </h3>
+                          <!-- The progress bar -->
+                          <div class="progress xs">
+                            <!-- Change the css width attribute to simulate progress -->
+                            <div class="progress-bar progress-bar-aqua" style="width: 20%" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                              <span class="sr-only">20% Complete</span>
+                            </div>
+                          </div>
+                        </a>
+                      </li><!-- end task item -->
+                    </ul>
+                  </li>
+                  <li class="footer">
+                    <a href="#">View all tasks</a>
+                  </li>
+                </ul>
+              </li>
+              
+              <!-- User Account Menu -->
+              <li class="dropdown user user-menu">
+                <!-- Menu Toggle Button -->
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <!-- The user image in the navbar-->
+                  <img src="img/photooji.jpg" class="user-image" alt="User Image">
+                  <!-- hidden-xs hides the username on small devices so only the image appears. -->
+                  <span class="hidden-xs">Oji Soekamti</span>
+                </a>
+                <ul class="dropdown-menu">
+                  <!-- The user image in the menu -->
+                  <li class="user-header">
+                    <img src="img/photooji.jpg" class="img-circle" alt="User Image">
+                    <p>
+                      Oji Soekamti - Web Developer
+                      <small>Member since Nov. 2012</small>
+                    </p>
+                  </li>
+                  <!-- Menu Body -->
+                  <li class="user-body">
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Followers</a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Sales</a>
+                    </div>
+                    <div class="col-xs-4 text-center">
+                      <a href="#">Friends</a>
+                    </div>
+                  </li>
+                  <!-- Menu Footer-->
+                  <li class="user-footer">
+                    <div class="pull-left">
+                      <a href="#" class="btn btn-default btn-flat">Profile</a>
+                    </div>
+                    <div class="pull-right">
+                      <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!-- Control Sidebar Toggle Button -->
+              <li>
+                <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+
+          <!-- Sidebar user panel (optional) -->
+          <div class="user-panel">
+            <div class="pull-left image">
+              <img src="img/photooji.jpg" class="img-circle" alt="User Image">
+            </div>
+            <div class="pull-left info">
+              <p>Oji Soekamti</p>
+              <!-- Status -->
+              <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+            </div>
+          </div>
+
+
+          <!-- left Sidebar Menu -->
+          <ul class="sidebar-menu">
+            <li class="header">
+              <i class="fa fa-dashboard"></i><span>Dashboard</span>
+            </li>
+            <li class="treeview">
+              <a href="client_table.html"><i class="fa fa-users"></i><span>Clients</span><i class="fa fa-angle-left pull-right"></i></a>
+                <ul class="treeview-menu">
+                    <li><a href="client_table.html"><span>View / Search Clients</span></a></li>
+                    <li><a href="client_form.html"><span>Add New Client</span></a></li>
+                    <li class="treeview"><a href="#"><span>Product / Service</span><i class="fa fa-angle-left pull-right"></i></a>
+                        <ul class="treeview-menu">
+                            <li>
+                              <a href="shared_hosting.html"><span>Shared Hosting</span></a>
+                            </li>
+                            <li>
+                              <a href="reseller_account.html"><span>Reseller Accounts</span></a>
+                            </li>
+                            <li>
+                              <a href="vps_servers.html"><span>VPS/Servers</span></a>
+                            </li>
+                            <li>
+                              <a href="other_service.html"><span>Other Servise</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                      <a href="cliet_serviceaddon.html"><span>Service Addons</span></a>
+                    </li>
+                    <li>
+                      <a href="client_domainregistration.html"><span>Domain Registration</span></a>
+                    </li>
+                    <li>
+                      <a href="client_cancellation.html"><span>Cancellation Requests</span></a>
+                    </li>
+                    <li>
+                      <a href="client_manage.html"><span>Manage Affiliates</span></a>
+                    </li>
+                    <li>
+                      <a href="client_mass.html"><span>Mass Mail Tool</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li class="treeview">
+                <a href="orders.html"><i class="fa fa-shopping-cart"></i><span>Orders</span><i class="fa fa-angle-left pull-right"></i></a>
+                <ul class="treeview-menu">
+                    <li>
+                      <a href="order.html"><span>List All Orders</span></a>
+                    </li>
+                    <li>
+                      <a href="order.html"><span>-Pending Orders</span></a>
+                    </li>
+                    <li>
+                      <a href="order.html"><span>-Active Orders</span></a>
+                    </li>
+                    <li>
+                      <a href="order.html"><span>-Fraud Orders</span></a>
+                    </li>
+                    <li>
+                      <a href="order.html"><span>-Cancelled Orders</span></a>
+                    </li>
+                    <li>
+                      <a href="order.html"><span>Add New Orders</span></a>
+                    </li>
+                </ul>
+            </li>
+            <li class="treeview">
+              <a href="billing.html"><i class="fa fa-calculator"></i><span>Billing</span><i class="fa fa-angle-left pull-right"></i></a>            
+              <ul class="treeview-menu"> 
+                <li>
+                  <a href="billing.html"><span>Transaction List</span></a>
+                </li>
+                <li  class="treeview">
+                  <a href="billing_invoice.html"><span>Invoice</span><i class="fa fa-angle-left pull-right"></i></a>
+                  <ul class="treeview-menu">
+                    <li>
+                      <a href="billing_invoice.html"><span>-Paid</span></a>
+                    </li>
+                    <li>
+                      <a href="billing_invoice.html"><span>-Unpaid</span></a>
+                    </li>
+                    <li>
+                      <a href="billing_invoice.html"><span>-Overdue</span></a>
+                    </li>
+                    <li>
+                      <a href="billing_invoice.html"><span>-Cancelled</span></a>
+                    </li>
+                    <li>
+                      <a href="billing_invoice.html"><span>-Refuned</span></a>
+                    </li>
+                    <li>
+                      <a href="billing_invoice.html"><span>-Collections</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="treeview">
+                  <a href="billing_items.html"><span>Billable Item</span><i class="fa fa-angle-left pull-right"></i></a>
+                  <ul class="treeview-menu">
+                    <li>
+                      <a href="billing_items.html"><span>-Uninvoiced</span></a>
+                    </li>
+                    <li>
+                      <a href="billing_items.html"><span>-Recuiring Items</span></a>
+                    </li>
+                    <li>
+                      <a href="billing_items.html"><span>-Add New</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="treeview">
+                  <a href="billing_quotes.html"><span>Quotes</span><i class="fa fa-angle-left pull-right"></i></a>
+                  <ul class="treeview-menu">
+                    <li>
+                      <a href="billing_quotes.html"><span>-Valid</span></a>
+                    </li>
+                    <li>
+                      <a href="billing_quotes.html"><span>-Expired</span></a>
+                    </li>
+                    <li>
+                      <a href="billing_quotes.html"><span>-Create New Quotes</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="billing_occp.html"><span>Offline CC Processing</span></a>
+                </li>                                                
+                <li>
+                  <a href="billing_gateway.html"><span>Gateway Logs</span></a>
+                </li>                                                                
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="suppport.html"><i class="fa fa-life-ring"></i><span>Support</span><i class="fa fa-angle-left pull-right"></i></a>
+              <ul class="treeview-menu">
+                <li>
+                  <a href="suppport.html"><span>Support Overviews</span></a>
+                </li>
+                <li>
+                  <a href="support_announcements.html"><span>Announcements</span></a>
+                </li>
+                <li>
+                  <a href="support_download.html"><span>Downloads</span></a>
+                </li>
+                <li>
+                  <a href="support_knowledgebase.html"><span>Knowledgebase</span></a>
+                </li>
+                <li class="treeview">
+                  <a href="support_tickets.html"><span>Suppport Tikets</span><i class="fa fa-angle-left pull-right"></i></a>
+                  <ul class="treeview-menu">
+                    <li>
+                      <a href="support_tickets.html"><span>-Flagged Tickets</span></a>
+                    </li>
+                    <li>
+                      <a href="support_tickets.html"><span>-All Active Tckets</span></a>
+                    </li>
+                    <li>
+                      <a href="support_tickets.html"><span>-Open</span></a>
+                    </li>
+                    <li>
+                      <a href="support_tickets.html"><span>-Answered</span></a>
+                    </li>
+                    <li>
+                      <a href="support_tickets.html"><span>-Customer-Reply</span></a>
+                    </li>
+                    <li>
+                      <a href="support_tickets.html"><span>-On Hold</span></a>
+                    </li>
+                    <li>
+                      <a href="support_tickets.html"><span>-In Progress</span></a>
+                    </li>
+                    <li>
+                      <a href="support_tickets.html"><span>-Closed</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="suport_opennewticketss.html"><span>Open New Tiket</span></a>
+                </li>
+                <li>
+                  <a href="support_predefined.html"><span>Predefined Replies</span></a>
+                </li>
+                <li class="treeview">
+                  <a href="support_network.html"><span>Network Issues</span><i class="fa fa-angle-left pull-right"></i></a>
+                  <ul class="treeview-menu">
+                    <li>
+                      <a href="support_network.html"><span>-Open</span></a>
+                    </li>
+                    <li>
+                      <a href="support_network.html"><span>-Scheduled</span></a>
+                    </li>
+                    <li>
+                      <a href="support_network.html"><span>-Resolved</span></a>
+                    </li>
+                    <li>
+                      <a href="support_network_add.html"><span>-Create New</span></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="report.html"><i class="fa fa-file-o"></i><span>Reports</span><i class="fa fa-angle-left pull-right"></i></a>
+              <ul class="treeview-menu">
+                <li>
+                  <a href="report_persentage.html"><span>Daily Performance</span></a>
+                </li>
+                <li>
+                  <a href="report_persentage.html"><span>Income Forecast</span></a>
+                </li>
+                <li>
+                  <a href="report_persentage.html"><span>Annual Income Report</span></a>
+                </li>
+                <li>
+                  <a href="report_persentage.html"><span>New Customers</span></a>
+                </li>
+                <li>
+                  <a href="report_persentage.html"><span>Ticket Feedback Scores</span></a>
+                </li>
+                <li>
+                  <a href="report_persentage.html"><span>Batch Invoice PDF Export</span></a>
+                </li>
+                <li>
+                  <a href="report.html"><span>More...</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="treeview">
+            <a href="#"><i class="fa fa-wrench"></i><span>Utilities</span><i class="fa fa-angle-left pull-right"></i></a>
+              <ul class="treeview-menu">
+                <li>
+                  <a href="utillities_email.html"><span>Email Marketer</span></a>
+                </li>
+                <li>
+                  <a href="utilities_link.html"><span>Link Traacking</span></a>
+                </li>
+                <li>
+                  <a href="utilities_browser.html"><span>Browser</span></a>
+                </li>
+                <li>
+                  <a href="utilities_calender.html"><span>Calender</span></a>
+                </li>
+                <li>
+                  <a href="utilities_todolist.html"><span>To-Do List</span></a>
+                </li>
+                <li>
+                  <a href="utilities_whois.html"><span>WHOIS Lookup</span></a>
+                </li>
+                <li>
+                  <a href="utilities_resolver.html"><span>Domain Resolver</span></a>
+                </li>
+                <li>
+                  <a href="utilities_cpanelimport.html"><span>cPanel/WHM Import</span></a>
+                </li>
+                <li class="treeview">
+                  <a href="#"><span>System</span><i class="fa fa-angle-left pull-right"></i></a>
+                  <ul class="treeview-menu">
+                    <li>
+                      <a href="utilities_sysdatabse_stats.html"><span>Database Status</span></a>
+                    </li>
+                    <li>
+                      <a href="utilities_syscleanup.html"><span>System Cleanup</span></a>
+                    </li>
+                    <li>
+                      <a href="utilities_sysphpinfo.html"><span>PHP Info</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="treeview">
+                  <a href="#"><span>Logs</span><i class="fa fa-angle-left pull-right"></i></a>
+                  <ul class="treeview-menu">
+                    <li>
+                      <a href="log_activity.html"><span>Activity Log</span></a>
+                    </li>
+                    <li>
+                      <a href="log_adminactivity.html"><span>Admin Log</span></a>
+                    </li>
+                    <li>
+                      <a href="log_module.html"><span>Module Log</span></a>
+                    </li>
+                    <li>
+                      <a href="log_support.html"><span>Email Message Log</span></a>
+                    </li>
+                    <li>
+                      <a href="log_support.html"><span>Ticket Mail Log</span></a>
+                    </li>
+                    <li>
+                      <a href="log_whois.html"><span>WHOIS Lookup Log</span></a>
+                    </li>                    
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="addon_directory.html"><i class="fa fa-puzzle-piece"></i><span>Addons</span><i class="fa fa-angle-left pull-right"></i></a>
+              <ul class="treeview-menu">
+                <li>
+                  <a href="#"><span>Example</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class="treeview">
+              <a href="#"><i class="fa fa-cog"></i><span>Setup</span><i class="fa fa-angle-left pull-right"></i></a>
+              <ul class="treeview-menu">
+                <li>
+                  <a href="setting_general.html"><span>General Setting</span></a>
+                </li>
+                <li>
+                  <a href="setting_automation.html"><span>Automation Settings</span></a>
+                </li>
+                <li class="treeview">
+                  <a href="#"><span>Staff Management</span><i class="fa fa-angle-left pull-right"></i></a>
+                  <ul class="treeview-menu">
+                    <li>
+                      <a href="administrator_user.html"><span>Administrator User</span></a>
+                    </li>
+                    <li>
+                      <a href="administrator_rule.html"><span>Administrator Roles</span></a>
+                    </li>
+                    <li>
+                      <a href="two_factor_auth.html"><span>Two-Factorr Authentication</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="treeview">
+                  <a href="#"><span>Payments</span><i class="fa fa-angle-left pull-right"></i></a>
+                  <ul class="treeview-menu">
+                    <li>
+                      <a href="payment_currencies.html"><span>Currencies</span></a>
+                    </li>
+                    <li>
+                      <a href="payment_gateway.html"><span>Payment Gateways</span></a>
+                    </li>
+                    <li>
+                      <a href="payment_taxrules.html"><span>Tax Rules</span></a>
+                    </li>
+                    <li>
+                      <a href="payment_promotions.html"><span>Promotions</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="treeview">
+                  <a href="#"><span>Product/Service</span><i class="fa fa-angle-left pull-right"></i></a>
+                  <ul class="treeview-menu">
+                    <li>
+                      <a href="setup_product.html"><span>Products/Service</span></a>
+                    </li>
+                    <li>
+                      <a href="setup_configurable.html"><span>Configurable Options</span></a>
+                    </li>
+                    <li>
+                      <a href="setup_product_addons.html"><span>Product Addons</span></a>
+                    </li>
+                    <li>
+                      <a href="setup_productbundles.html"><span>Product Bundles</span></a>
+                    </li>
+                    <li>
+                      <a href="setup_domainpricing.html"><span>Domain Pricing</span></a>
+                    </li>
+                    <li>
+                      <a href="setup_domainregisters.html"><span>Domain Registers</span></a>
+                    </li>
+                    <li>
+                      <a href="setup_server.html"><span>Server</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="treeview">
+                  <a href="#"><span>Support</span></a>
+                  <ul class="treeview-menu">
+                    <li>
+                      <a href="support_deparments.html"><span>Support Departments</span></a>
+                    </li>
+                    <li>
+                      <a href="support_ticket.html"><span>Tickets Statuses</span></a>
+                    </li>
+                    <li>
+                      <a href="support_esclation.html"><span>Esclation Rules</span></a>
+                    </li>
+                    <li>
+                      <a href="support_spamcontrol.html"><span>Spam Control</span></a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="setup_emailtemplate.html"><span>Email Templates</span></a>
+                </li>
+                <li>
+                  <a href="setup_addonmodule.html"><span>Addon Modules</span></a>
+                </li>
+                <li>
+                  <a href="setup_customfield.html"><span>Custom Client Fields</span></a>
+                </li>
+                <li>
+                  <a href="setup_fraudprotection.html"><span>Fraud Protection</span></a>
+                </li>
+                <li class="treeview">
+                  <a href="#"><span>Other</span></a>
+                  <ul class="treeview-menu">
+                    <li>
+                      <a href="setup_order.html"><span>Orders Statuses</span></a>  
+                    </li>
+                    <li>
+                      <a href="setup_security.html"><span>Security Questions</span></a>  
+                    </li>
+                    <li>
+                      <a href="setup_bannedips.html"><span>Banned IPs</span></a>  
+                    </li>
+                    <li>
+                      <a href="setup_bannedemail.html"><span>Banned Emails</span></a>  
+                    </li>
+                    <li>
+                      <a href="setup_databsebackup.html"><span>Database Backups</span></a>  
+                    </li>
+                  </ul>
+                </li>
+              </ul> 
+            </li>
+            <li class="treeview">
+              <a href="#"><i class="fa fa-question"></i><span>Help</span><i class="fa fa-angle-left pull-right"></i></a>
+              <ul class="treeview-menu">
+                <li>
+                  <a href="help_documentation.html"><span>Documentation</span></a>
+                </li>
+                <li>
+                  <a href="help_licenseinformation.html"><span>License Information</span></a>
+                </li>
+                <li>
+                  <a href="help_cangelicensekey.html"><span>Cange License key</span></a>
+                </li>
+                <li>
+                  <a href="help_checkforupdate.html"><span>Check for Updates</span></a>
+                </li>
+                <li>
+                  <a href="help_gethelp.html"><span>Get Help</span></a>
+                </li>
+                <li>
+                  <a href="help_community.html"><span>Community Forums</span></a>
+                </li>
+              </ul>
+            </li>
+          </ul><!-- /.sidebar-menu -->
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>
+            Add New Client
+          </h1>
+          </br>
+        </section><!-- /.content -->
+        <section class="content">
+          <!-- row -->
+          <div class="row" style="margin:0px;">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <form class="form-horizontal">
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="inputFirstName" class="col-sm-5 control-label">First Name</label>
+                      <div class="col-sm-7">
+                        <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputLastName" class="col-sm-5 control-label">Last Name</label>
+                      <div class="col-sm-7">
+                        <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="companyName" class="col-sm-5 control-label">Company Name</label>
+                      <div class="col-sm-7">
+                        <input type="text" class="form-control" id="companyName" placeholder="Company Name">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputEmail3" class="col-sm-5 control-label">Email Address</label>
+                      <div class="col-sm-7">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Email Address">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputPassword3" class="col-sm-5 control-label">Password</label>
+                      <div class="col-sm-7">
+                        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="securityQuestion" class="col-sm-5 control-label">Security Question</label>
+                      <div class="col-sm-7">
+                        <select class="form-control" >
+                          <option value=""></option>
+                          <option value="">Man Robuka</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="securityAnswer" class="col-sm-5 control-label">Security Answer</label>
+                      <div class="col-sm-7">
+                        <input type="text" class="form-control" id="securityAnswer" placeholder="Security Answer">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="latesFeed" class="col-sm-5 control-label">Late Fees</label>
+                      <div class="col-sm-7">
+                        <input type="checkbox" id="latesFeed" >
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="overdueNotice" class="col-sm-5 control-label">Overdue Notices</label>
+                      <div class="col-sm-7">
+                        <input type="checkbox" id="overdueNotice" >
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="taxExempt" class="col-sm-5 control-label">Tax Exempt</label>
+                      <div class="col-sm-7">
+                        <input type="checkbox" id="taxExempt" >
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="separateInvoice" class="col-sm-5 control-label">Sepaarate Invoice</label>
+                      <div class="col-sm-7">
+                        <input type="checkbox" id="separateInvoice" >
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="disablecc" class="col-sm-5 control-label">Disable CC Processing</label>
+                      <div class="col-sm-7">
+                        <input type="checkbox" id="disablecc" >
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="creditNumber" class="col-sm-5 control-label">Creadit Number</label>
+                      <div class="col-sm-7">
+                        <input type="number" class="form-control" id="creditNumber" placeholder="0">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="form-group">
+                      <label for="address1" class="col-sm-2 control-label">Address 1</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="address1" placeholder="Address 1">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="address2" class="col-sm-2 control-label">Address 2</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="address2" placeholder="Address 2">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="city" class="col-sm-2 control-label">City</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="city" placeholder="City">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="stateRegion" class="col-sm-2 control-label">State/Region</label>
+                      <div class="col-sm-10">
+                        <select class="form-control" >
+                          <option value=""></option>
+                          <option value="">Djakarta</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="postcode" class="col-sm-2 control-label">Postcode</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="postcode" placeholder="Postcode">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="country" class="col-sm-2 control-label">Country</label>
+                      <div class="col-sm-10">
+                        <select class="form-control" >
+                          <option value="">Country</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="phoneNumber" class="col-sm-2 control-label">Phone Number</label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="phoneNumber" placeholder="Phone Number">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="paymenMethod" class="col-sm-2 control-label">Payment Method</label>
+                      <div class="col-sm-10">
+                        <select class="form-control" >
+                          <option value="">Select to Change Default</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="bill" class="col-sm-2 control-label">Billing Contact</label>
+                      <div class="col-sm-10">
+                        <select class="form-control" >
+                          <option value="">Default</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="Launguange" class="col-sm-2 control-label">Launguange</label>
+                      <div class="col-sm-10">
+                        <select class="form-control" >
+                          <option value="">Default</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="Status" class="col-sm-2 control-label">Status</label>
+                      <div class="col-sm-10">
+                        <select class="form-control" >
+                          <option value="">Active</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="Status" class="col-sm-2 control-label">Currency</label>
+                      <div class="col-sm-10">
+                        <select class="form-control" >
+                          <option value="">USD</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="Status" class="col-sm-2 control-label">Client Group</label>
+                      <div class="col-sm-10">
+                        <select class="form-control" >
+                          <option value="">None</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class=" col-sm-12">
+                      <button type="addclient" class="pull-right btn btn-default">Add Client</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- /row -->
+        </section>
+
+      </div><!-- /.content-wrapper -->
+
+      <!-- Main Footer -->
+      <footer class="main-footer">
+        <!-- To the right -->
+        <div class="pull-right hidden-xs">
+          Anything you want
+        </div>
+        <!-- Default to the left -->
+        <strong>Copyright &copy; 2015 <a href="#">Company</a>.</strong> All rights reserved.
+      </footer>
+
+      <!-- Control Sidebar -->
+      <aside class="control-sidebar control-sidebar-light control-sidebar ">
+        <!-- sidebar content here -->
+      </aside><!-- /.control-sidebar -->
+      <!-- Add the sidebar's background. This div must be placed
+           immediately after the control sidebar -->
+      <!-- <div class="control-sidebar-bg"></div> -->
+    </div><!-- ./wrapper -->
+
+    <!-- REQUIRED JS SCRIPTS -->
+
+    <!-- jQuery 2.1.4 -->
+    <script src="js/jQuery-2.1.4.min.js"></script>
+    <!-- Bootstrap 3.3.5 -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ChartJS 1.0.1 -->
+    <script src="plugins/chartjs/Chart.js"></script>
+    <script src="plugins/chartjs/Chart.min.js"></script>
+    <!-- FastClick -->
+    <script src="plugins/fastclick/fastclick.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="js/app.min.js"></script>
+    <!-- Sparkline -->
+    <script src="plugins/sparkline/jquery.sparkline.min.js"></script>
+    <!-- jvectormap -->
+    <script src="plugins/jvectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="plugins/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <!-- SlimScroll 1.3.0 -->
+    <script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+    <!-- ChartJS 1.0.1 -->
+    <script src="plugins/chartjs/Chart.min.js"></script>
+    <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+    <!-- <script src="js/pages/dashboard2.js"></script> -->
+    <!-- AdminLTE for demo purposes -->
+    <script src="js/demo.js"></script>
+    <!-- fullCalendar -->
+    <script src="js/moment.min.js"></script>
+    <script src="plugins/fullcalendar/fullcalendar.js"></script>
+    <script src="plugins/fullcalendar/fullcalendar.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        // page is now ready, initialize the calendar...
+        $('#calendar').fullCalendar({
+
+        })
+      }); 
+    </script>
+
+  </body>
+</html>
